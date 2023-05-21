@@ -1,0 +1,412 @@
+@use '../../setting/setting' as f;
+
+
+header {
+    #header-wrapper {
+      height: 120px;
+      width: 100%;
+      background-color: #070b1366;
+      opacity: 0.4;
+      position: fixed;
+      top: 0px;
+      left: 0;
+      z-index: 15;
+      transition: 0.6s;
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+      #header-contents-box {
+        max-width: 1080px;
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+        line-height: 120px;
+        margin: 0 auto;
+        img {
+          transform: translate(0, -24px);
+        }
+        .wrapper {
+          display: flex;
+          color: #fff;
+          li {
+            margin-left: 40px;
+          }
+        }
+      }
+
+    }
+    .scroll-active {
+      transform: translateY(-120px);
+    }
+
+    #top-image {
+      background-color: #333;
+      opacity: 0.8;
+      position: relative;
+      img {
+        height: 830px;
+        width: 100%;
+        object-fit: cover;
+      }
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+      #topText1 {
+        #typing1 {
+          position: absolute;
+          bottom: 53%;
+          left: 38%;
+          font-family: "Bad Script", cursive;
+          font-size: 32px;
+          width: 100%;
+          line-height: 50px;
+          display: inline-block;
+          padding-right: 32px;
+          margin-top: 40px;
+          color: #112152;
+          width: 300px;
+
+          &::after {
+            content: "";
+            border-right: 2px solid;
+            animation: flashing1 0.3s linear;
+            animation-direction: alternate;
+            animation-iteration-count: 14;
+            animation-fill-mode: forwards;
+            color: #112152;
+          }
+
+          @keyframes flashing1 {
+            0% {
+              opacity: 0;
+            }
+          }
+          @media screen and (min-width: 1600px) {
+            left: 38% !important;
+          }
+          @media screen and (min-width: 1400px) {
+            left: 42% !important;
+          }
+          @media screen and (max-width: 1215px) {
+            left: 37% !important;
+          }
+          @media screen and (max-width: 1000px) {
+            font-size: 24px !important;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 24px !important;
+            left: 35% !important;
+          }
+        }
+      }
+      #topText2 {
+        #typing2 {
+          position: absolute;
+          bottom: 45%;
+          left: 45%;
+          font-family: "Bad Script", cursive;
+          font-size: 32px;
+          width: 100%;
+          line-height: 50px;
+          display: inline-block;
+          padding-right: 32px;
+          margin-top: 40px;
+          color: #112152;
+          width: 300px;
+
+          &::after {
+            content: "";
+            border-right: 2px solid;
+            animation: flashing2 0.6s linear infinite;
+            animation-fill-mode: backwards;
+            animation-delay: 4s;
+            color: #112152;
+          }
+
+          @keyframes flashing2 {
+            0% {
+              opacity: 0;
+            }
+          }
+        }
+        @media screen and (min-width: 1600px) {
+          left: 43% !important;
+        }
+        @media screen and (min-width: 1400px) {
+          left: 47% !important;
+        }
+        @media screen and (max-width: 1215px) {
+          left: 40% !important;
+        }
+        @media screen and (max-width: 1000px) {
+          font-size: 24px !important;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 24px !important;
+          left: 40% !important;
+        }
+      }
+      }
+
+      #top-box {
+        max-width: 500px;
+        height: 200px;
+        padding: 0 16px;
+        margin: 0 auto;
+        // display: flex;
+        // position: absolute;
+        z-index: 13;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        margin: auto;
+        color: #112152;
+
+        h1 {
+          font-family: "Bad Script", cursive;
+          font-size: 32px;
+          width: 100%;
+          line-height: 50px;
+          display: inline-block;
+          padding-right: 32px;
+          margin-top: 40px;
+
+          .mobileBr {
+            display: none;
+          }
+        }
+
+        h2 {
+          font-family: "Bad Script", cursive;
+          font-size: 32px;
+          width: 100%;
+          line-height: 50px;
+          margin-top: 30px;
+          margin-left: 50px;
+        }
+      }
+    }
+    #mobileTop-image {
+      display: none;
+    }
+    #sentenceBack {
+      background: #fff;
+      position: absolute;
+      z-index: 14;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      margin: auto;
+    }
+    .topBoxFadeIn {
+      opacity: 0;
+      transition: 1s;
+      z-index: -3 !important;
+    }
+    #mobileHeaderWrapper {
+      display: none;
+      @media screen and (max-width: 600px) {
+          max-width: 600px;
+          position: fixed;
+          top: 0;
+          display: flex;
+          justify-content: space-between;
+          padding: 16px 16px;
+          z-index: 14;
+
+          h1 {
+            font-size: 40px;
+          }
+          .hamburger {
+            .nav {
+              padding-left: 20px;
+              padding-right: 20px;
+              padding-top: 60px;
+              color: #fff;
+              position: fixed;
+              top: 0;
+              bottom: 0;
+              left: -100%;
+              width: 100%;
+              background-color: #333;
+              -webkit-transition: 0.5s;
+              transition: 0.5s;
+              z-index: 10;
+              #nav_main_text {
+                margin-top: 80px;
+                li {
+                  border-top: 1px solid #fff;
+                  border-bottom: 1px solid #fff;
+                  line-height: 60px;
+                  text-align: center;
+                }
+              }
+            }
+            .fadein {
+              -webkit-transform: translateX(100%);
+              transform: taranslateX(100%);
+              z-index: 5;
+            }
+            /*ハンバーガーライン*/
+            #target {
+              width: 40px;
+              height: 30px;
+              position: fixed;
+              top: 30px;
+              right: 16px;
+              cursor: pointer;
+              display: block;
+              transition: 0.5;
+              z-index: 19;
+
+              .target_inner {
+                width: 40px;
+                height: 30px;
+                position: relative;
+                .target_inner_line {
+                  display: block;
+                  width: 40px;
+                  height: 5px;
+                  transition: 0.5s;
+                  border-radius: 50px;
+                  position: absolute;
+                  background-color: #112152;
+                }
+                .target_inner_1 {
+                  top: 0px;
+                }
+                .target_inner_2 {
+                  top: 13px;
+                }
+                .target_inner_3 {
+                  top: 26px;
+                }
+                .linea,
+                lineb,
+                .linec {
+                  background: #fff;
+                }
+                .linea {
+                  transform: rotate(225deg);
+                  top: 13px;
+                }
+                .lineb {
+                  opacity: 0;
+                }
+                .linec {
+                  transform: rotate(-225deg);
+                  top: 13px;
+                }
+              }
+            }
+            .slidex {
+              z-index: 20;
+            }
+          }
+
+      }
+    }
+    #mobileTop-image {
+      display: none;
+      @media screen and (max-width: 600px) {
+          display: block;
+          position: relative;
+          max-width: 600px;
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+          #topText3 {
+            #typing3 {
+              position: absolute;
+              bottom: 23%;
+              left: 33%;
+              font-family: "Bad Script", cursive;
+              font-size: 20px;
+              width: 100%;
+              line-height: 50px;
+              display: inline-block;
+              padding-right: 32px;
+              margin-top: 40px;
+              color: #112152;
+              width: 200px;
+              @media screen and (max-width: 468px) {
+                left: 30% !important;
+              }
+
+              @media screen and (max-width: 440px) {
+                left: 30% !important;
+                font-size: 14px !important;
+                width: 180px !important;
+              }
+              @media screen and (max-width: 336px) {
+                left: 29% !important;
+                bottom: 21% !important;
+                font-size: 12px !important;
+                width: 150px !important;
+              }
+              &::after {
+                content: "";
+                border-right: 2px solid;
+                animation: flashing1 0.3s linear;
+                animation-direction: alternate;
+                animation-iteration-count: 14;
+                animation-fill-mode: forwards;
+                color: #112152;
+              }
+
+              @keyframes flashing1 {
+                0% {
+                  opacity: 0;
+                }
+              }
+            }
+          }
+          #topText4 {
+            #typing4 {
+              position: absolute;
+              bottom: 18%;
+              left: 40%;
+              font-family: "Bad Script", cursive;
+              font-size: 20px;
+              width: 100%;
+              line-height: 50px;
+              display: inline-block;
+              padding-right: 32px;
+              margin-top: 40px;
+              color: #112152;
+              width: 220px;
+              @media screen and (max-width: 468px) {
+                left: 37% !important;
+              }
+              @media screen and (max-width: 440px) {
+                left: 37% !important;
+                font-size: 14px !important;
+                width: 180px !important;
+              }
+              @media screen and (max-width: 336px) {
+                left: 36% !important;
+                bottom: 16% !important;
+                font-size: 12px !important;
+                width: 150px !important;
+              }
+              &::after {
+                content: "";
+                border-right: 2px solid;
+                animation: flashing2 0.6s linear infinite;
+                animation-fill-mode: backwards;
+                animation-delay: 4s;
+                color: #112152;
+              }
+
+              @keyframes flashing2 {
+                0% {
+                  opacity: 0;
+                }
+              }
+            }
+          }
+
+      }
+    }

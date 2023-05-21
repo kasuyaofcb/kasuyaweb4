@@ -1,0 +1,86 @@
+@use '../../setting/setting' as f;
+
+.fv{
+position: relative;
+height: 100vh;
+}
+
+.fv__inner {
+  display: flex;
+  height: 100vh;
+}
+
+.fv__leftBox{
+  width: 50%;
+display: grid;
+align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.fv__textBox{
+  padding: 40px;
+  h1{
+    font-size: 9.6rem;
+      }
+
+}
+.fv__textSub{
+  p{
+    font-size: 3.6rem;
+  }
+}
+
+.fv__icon{
+  position: absolute;
+  bottom: 12%;
+  left: 12%;
+  max-width: 60px;
+}
+
+.fv__rightBox{
+  width: 50%;
+  background-image: url("../img/top-bg4.png");
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-areas:
+"a b c d"
+"e f g h"
+"i j k l"
+"m n o p";
+}
+
+.fv__languagesBox{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+
+
+  p{
+    // transform: rotate(90deg);
+    color: #000;
+    // text-shadow: 1px 1px 2px #333;
+    // color:  #ffba53;
+
+  }
+
+}
+
+.fv__border{
+  width: 200px;
+  height: 6px;
+  background: #ffba53;
+}
+
+.fv__border1{
+  grid-area:g;
+}
+.fv__border2{
+  grid-area: i;
+}
+.fv__border3{
+  grid-area: o;
+}
+
+.fv__bottomLine{
+  background: linear-gradient(90deg, #333 0%,#333 50%,#fff 50%,#fff 100%);
+}

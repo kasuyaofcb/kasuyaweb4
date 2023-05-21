@@ -1,0 +1,126 @@
+@use '../../setting/setting' as f;
+
+.solutions{
+// margin-top: 5000px;
+}
+
+.solutions__title{
+  padding-left: 128px;
+}
+
+.solutions__skillItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  background-color: opacity 0.5;
+  &:nth-child(odd){
+    background-color: f.$main-brue--opacity3;
+  }
+  &:nth-child(even){
+    background-color: f.$sub-yellow--opacity3;
+  }
+
+svg{
+  width: 150px;
+}
+}
+
+.solutions__skillBox{
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(5);
+  grid-template-rows: repeat(5);
+  height: 1000px;
+  grid-template-areas:
+  "a b c d f"
+  "g h i j k"
+  "l m n o p"
+  "q r s t u"
+  "v w x y z";
+
+  .skillItem1{
+    grid-area: a;
+  }
+  .skillItem2{
+    grid-area: c;
+  }
+  .skillItem3{
+    grid-area: f;
+  }
+  .skillItem4{
+    grid-area: h;
+    svg{
+      width: 120px;
+    }
+  }
+  .skillItem5{
+    grid-area: j;
+    svg{
+      width: 120px;
+    }
+  }
+  .skillItem6{
+    grid-area: l;
+    svg{
+      width: 120px;
+    }
+  }
+  .skillItem7{
+    grid-area: n;
+  }
+  .skillItem8{
+    grid-area: p;
+    svg{
+      .add-yellow{
+        fill:f.$sub-yellow !important;
+      }
+    }
+  }
+  .skillItem9{
+    grid-area: r;
+  }
+  .skillItem10{
+    grid-area: t;
+    svg{
+      width: 80px;
+    }
+  }
+  .skillItem11{
+    grid-area: v;
+    svg{
+      width: 150px;
+    height: 150px;
+    .add-blue{
+      fill:f.$main-brue;
+    }
+    }
+  }
+  .skillItem12{
+    grid-area: x;
+    svg{
+      width: 150px;
+    height: 150px;
+    .add-yellow{
+      fill:f.$sub-yellow
+    }
+    }
+  }
+  .skillItem13{
+    grid-area: z;
+    svg{
+      width: 150px;
+    height: 150px;
+    .add-blue{
+      fill:f.$main-brue;
+    }
+    }
+  }
+  .add-blue{
+    background-color: f.$main-brue;
+  }
+
+  .add-yellow{
+    background-color: f.$sub-yellow;
+  }
+}

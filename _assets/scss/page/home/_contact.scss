@@ -1,0 +1,341 @@
+@use '../../setting/setting' as f;
+
+#contact {
+    width: 100%;
+    background-color: #e5e5e5;
+    @media screen and (max-width: 600px) {
+      padding: 0 16px 40px 16px;
+    }
+    #contactBox {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 40px;
+      padding-bottom: 80px;
+      @media screen and (max-width: 600px) {
+        padding: 0;
+      }
+      .indexBox5 {
+        padding-top: 80px;
+        h4{
+          @media screen and (max-width: 600px) {
+            font-size: 24px;
+          }
+        }
+        p {
+          font-size: 16px;
+          text-align: center;
+          color: #112152;
+          margin-top: 16px;
+        }
+        .indexBorder {
+          // width: 56px;
+          // height: 3px;
+          // background-color: #e1b85d;
+          margin: 16px auto 72px;
+        }
+      }
+      #contactForm {
+        line-height: 24px;
+        @media screen and (max-width: 600px) {
+          margin: 0 auto;
+        }
+        #mw_wp_form_mw-wp-form-34 {
+          p {
+            text-align: center;
+            @media screen and (max-width: 600px) {
+              text-align: center;
+            }
+            #mobile_space{
+              @media screen and (max-width: 600px) {
+                display: block;
+              }
+            }
+          }
+        }
+        #mobile {
+          display: none;
+          @media screen and (max-width: 600px) {
+            display: block;
+          }
+        }
+
+        #contactWrapper {
+          margin: 60px auto 0 auto;
+          max-width: 640px;
+          padding: 0 16px;
+
+          dd {
+            background: #fff;
+            max-width: 410px;
+            width: 100%;
+            height: 40px;
+            input {
+              // width: 100%;
+              max-width: 450px;
+              min-width: 280px;
+              line-height: 38px;
+            }
+          }
+          #contactText1 {
+            display: flex;
+            justify-content: center;
+            @media screen and (max-width: 600px) {
+              flex-direction: column;
+              align-items: center;
+            }
+            dt {
+              height: 48px;
+              // width: 100%;
+              line-height: 40px;
+              margin-bottom: 48px;
+              text-align: left;
+              min-width: 160px;
+              @media screen and (max-width: 600px) {
+                padding-left: 0 !important;
+            margin-bottom: 0 !important;
+            max-width: 300px !important;
+            font-weight: normal !important;
+            color: #333 !important;
+            line-height: 32px !important;
+            height: 32px !important;
+            padding-left: 8px !important;
+              }
+            }
+            #contactRed {
+              color: red;
+            }
+            dd {
+              flex: 1;
+              @media screen and (max-width: 600px) {
+                max-width: 300px !important;
+                margin-bottom: 24px;
+              }
+              input {
+                max-width: 410px;
+                min-width: 280px;
+                padding-top: 3px;
+                padding-left: 8px;
+                padding-right: 8px;
+                @media screen and (max-width: 600px) {
+                  max-width: 100% !important;
+                }
+
+              }
+              textarea{
+                @media screen and (max-width: 600px) {
+                  max-width: 100% !important;
+                }
+              }
+            }
+          }
+          #contactText2 {
+            display: flex;
+            justify-content: center;
+            @media screen and (max-width: 600px) {
+              flex-direction: column;
+              align-items: center;
+            }
+            dt {
+              height: 48px;
+              // width: 100%;
+              line-height: 40px;
+              min-width: 160px;
+              margin-bottom: 48px;
+              text-align: left;
+              @media screen and (max-width: 600px) {
+                padding-left: 0 !important;
+            margin-bottom: 0 !important;
+            max-width: 300px !important;
+            font-weight: normal !important;
+            color: #333 !important;
+            line-height: 32px !important;
+            height: 32px !important;
+            padding-left: 8px !important;
+              }
+            }
+            #contactRed {
+              color: red;
+            }
+            dd {
+              flex: 1;
+              @media screen and (max-width: 600px) {
+                max-width: 300px !important;
+                margin-bottom: 24px;
+              }
+              input {
+                max-width: 410px;
+                min-width: 280px;
+                padding-top: 3px;
+                padding-left: 8px;
+                padding-right: 8px;
+                @media screen and (max-width: 600px) {
+                  max-width: 100% !important;
+                }
+              }
+              textarea{
+                @media screen and (max-width: 600px) {
+                  max-width: 100% !important;
+                }
+              }
+            }
+          }
+          #contactText3 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 100px;
+            @media screen and (max-width: 600px) {
+              flex-direction: column;
+              align-items: center;
+              margin-bottom: 32px !important;
+            }
+            dd {
+              height: 240px;
+              @media screen and (max-width: 600px) {
+                max-width: 300px !important;
+                margin-bottom: 24px;
+              }
+            }
+            p {
+              width: 0;
+              height: 0;
+            }
+            input{
+              @media screen and (max-width: 600px) {
+                max-width: 100% !important;
+              }
+            }
+            textarea {
+              height: 240px;
+              width: 410px;
+              min-width: 280px;
+              padding-top: 3px;
+              padding-left: 8px;
+              padding-right: 8px;
+              @media screen and (max-width: 600px) {
+                max-width: 100% !important;
+              }
+            }
+            dt {
+              height: 24px;
+              // width: 100%;
+              min-width: 160px;
+              line-height: 32px;
+              // padding-left: 56px;
+              margin-bottom: 48px;
+              @media screen and (max-width: 600px) {
+                padding-left: 0 !important;
+            margin-bottom: 0 !important;
+            max-width: 300px !important;
+            font-weight: normal !important;
+            color: #333 !important;
+            line-height: 32px !important;
+            height: 32px !important;
+            padding-left: 8px !important;
+              }
+            }
+            #contactRed {
+              color: red;
+            }
+            dd {
+              flex: 1;
+            }
+          }
+        }
+      }
+      #arrowBox4 {
+        width: 200px;
+        height: 30px;
+        color: #112152;
+        margin: 0 auto;
+        text-align: center;
+        input {
+          font-size: 24px;
+          @media screen and (max-width: 600px) {
+            font-size: 16px !important;
+          }
+        }
+        p {
+          font-size: 24px;
+        }
+      }
+      #arrow4{
+        @media screen and (max-width: 600px) {
+          width: 90px;
+      margin-left: 60px;
+      margin-top: 8px;
+        }
+      }
+    }
+    .mw_wp_form_confirm > #confirm_submit {
+      display: flex;
+      justify-content: center;
+    }
+    #arrowBox7 {
+      width: 200px;
+      height: 30px;
+      color: #112152;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 24px;
+      display: none;
+      @media screen and (max-width: 600px) {
+        font-size: 16px !important;
+      }
+    }
+    #arrow7{
+      @media screen and (max-width: 600px) {
+        width: 100px !important;
+        margin-left: 50px !important;
+      }
+    }
+  }
+
+
+  #contactForm{
+
+   .wpcf7-text{
+      background-color: #fff;
+      width: 100%;
+      margin-top: 6px;
+      padding: 3px 6px;
+      height: 50px;
+    }
+    .wpcf7-textarea{
+      background-color: #fff;
+      width: 100%;
+      margin-top: 6px;
+      padding: 3px 6px;
+
+    }
+  }
+
+  .required{
+    color: red;
+  }
+
+ .label-title{
+   width: 200px;
+ }
+
+ .form-item{
+   margin-bottom: 24px;
+
+ }
+
+ .form-label{
+   width: 200px;
+ }
+
+ .wpcf7-form-control-wrap{
+
+   width: 100%;
+ }
+
+ .wpcf7-form-control{
+   margin: 0 auto;
+   display: block;
+ }
+
+ #arrow4{
+  margin-top: -24px !important;
+ }

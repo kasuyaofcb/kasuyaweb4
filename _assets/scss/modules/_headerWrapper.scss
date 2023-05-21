@@ -1,0 +1,133 @@
+@use '../setting/setting' as f;
+
+.headerWrapper{
+  position: fixed;
+display: flex;
+width: 100vw;
+z-index: 5;
+}
+
+.headerWrapper__languagesBox{
+  width: 50%;
+}
+
+.headerWrapper__hum{
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  padding-right:60px ;
+}
+
+.headerWrapper__humLine{
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: rgb(16, 59, 68);
+  background-color: #fff;
+  margin-top: 24px;
+  transition: 0.5s;
+}
+
+.headerWrapper__humLine1{
+margin-bottom: 20px;
+}
+
+.headerWrapper__languagesBox{
+  transform: rotate(90deg);
+  transform-origin: top left;
+  margin-left: 124px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  p{
+    margin-bottom: 24px;
+  }
+
+}
+
+.headerWrapper__langBtn{
+  display: inline-block;
+  width: 100px;
+}
+
+.headerWrapper__hum--on{
+
+  .headerWrapper__humLine1{
+transform: rotate(-45deg);
+margin-top: 36px;
+
+// transform-origin: center center;
+  }
+  .headerWrapper__humLine2{
+transform: rotate(45deg);
+margin-top: -24px;
+
+// transform-origin: center center;
+  }
+}
+
+.headerWrapper__humMenu{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  transform: translateY(-100%);
+  transition: 0.3s;
+  ul{
+    li{
+      a{
+        transform: translate(0, 105%);
+      }
+    }
+  }
+}
+
+.headerWrapper__hum--on{
+.headerWrapper__humLine{
+  background-color: #000;
+  position:relative;
+  z-index: 1;
+}
+  .headerWrapper__humMenu{
+    transform: translateY(0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 60px;
+li{
+  display: flex;
+  overflow: hidden;
+  a{
+    font-size: 8.0rem;
+    display: block;
+    transform: translate(0, 0);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+    transition-delay: 0.3s;
+  }
+
+
+}
+    }
+  }
+
+}
+
+.midnightHeader.default {
+  background: none;
+  color: black;
+}
+.midnightHeader.white {
+  background: white;
+  color: black;
+}
+.midnightHeader.blue {
+  background: blue;
+  color: white;
+}

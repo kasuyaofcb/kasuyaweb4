@@ -1,0 +1,64 @@
+@use '../../setting/setting' as f;
+
+.toContact{
+  border-top: 1px solid f.$white;
+  border-bottom:1px solid f.$white ;
+  z-index: 100;
+  position: relative;
+h2{
+  z-index: 5;
+}
+  p{
+    color: f.$white;
+    z-index: 5;
+  }
+}
+
+
+.toContact:hover .toContact__inner h2 .toContact__textDeg{
+  transform: rotate(20deg);
+  transition: 0.3s;
+}
+
+
+.toContact__textDeg{
+  display: inline-block;
+}
+
+.toContact__inner{
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 40px;
+  h2{
+    color: f.$white;
+    font-size: 36px;
+    -webkit-text-stroke: unset;
+  }
+}
+
+.toContact__arrow{
+  width: 40px;
+  animation: bounce 2s ease infinite
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateX(0);
+  }
+
+  60% {
+      transform: translateX(0);
+  }
+
+  70% {
+      transform: translateX(-.1em);
+  }
+
+  80% {
+      transform: translateX(.1em);
+  }
+
+  100% {
+      transform: translateX(0);
+  }
+}

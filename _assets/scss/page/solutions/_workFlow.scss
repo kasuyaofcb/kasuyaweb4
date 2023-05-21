@@ -1,0 +1,325 @@
+@use '../../setting/setting' as f;
+
+
+#workFlow {
+    max-width: 1080px;
+    padding: 0 40px;
+    margin: 100px auto 0;
+    @media screen and (max-width: 1000px) {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+    @media screen and (max-width: 600px) {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+    #workFlowBox{
+        @media screen and (max-width: 1000px) {
+            max-width: 100%;
+        }
+
+    }
+    #mainWorkFlowBox {
+        @media screen and (max-width: 600px) {
+        display: none;
+        }
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+      }
+    #mobileWorkFlow {
+      display: none;
+      @media screen and (max-width: 1000px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    #mobileWorkFlowLine {
+    @media screen and (max-width: 1000px) {
+        height: 1020px;
+        width: 1px;
+        background: #000000;
+        margin-left: 30px;
+    }
+}
+#mobileWorkFlowBox{
+    @media screen and (max-width: 1000px) {
+        max-width: 100%;
+        display: block;
+        margin-top: 40px;
+    }
+    dl{
+        @media screen and (max-width: 1000px) {
+            max-width: 300px;
+            height: 60px;
+            margin-bottom: 140px;
+            border-top: 1px solid #333;
+            transform: translateX(-15px);
+            padding-left: 15px;
+            padding-top: 16px;
+        }
+        dt{
+            @media screen and (max-width: 1000px) {
+                    margin-bottom: 16px;
+        }
+    }
+    dd{
+        @media screen and (max-width: 1000px) {
+            line-height: 24px;
+}
+    }
+}
+}
+#mobileWorkFlowCircleBox {
+    .mobileWorkFlowCircle {
+        @media screen and (max-width: 1000px) {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #112152;
+            margin-bottom: 140px;
+            transform: translate(-30px, 30px);
+        }
+      }
+}
+    }
+    .subIndexTitle {
+      width: 200px;
+      @media screen and (max-width: 1000px) {
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 600px) {
+        margin: 0 auto;
+    }
+      h5 {
+        font-size: 32px;
+        text-align: center;
+        position: relative;
+        width: 220px;
+        color: #112152;
+        margin: 0 auto;
+
+        margin-top: 100px;
+
+        &::before {
+          content: "";
+          width: 20px;
+          border-bottom: 1px solid #112152;
+          position: absolute;
+          left: 0;
+          top: 18px;
+          @media screen and (max-width: 1000px) {
+            display: none;
+        }
+        @media screen and (max-width: 600px) {
+            display: none;
+
+        }
+        }
+      }
+      p {
+        margin-top: 16px;
+        color: #112152;
+        margin-left: 24px;
+        @media screen and (max-width: 1000px) {
+            text-align: center;
+            margin-left: 0;
+            margin-bottom: 48px;
+        }
+        @media screen and (max-width: 600px) {
+            text-align: center;
+            margin-left: 0;
+            margin-bottom: 48px;
+
+        }
+      }
+    }
+    #workFlowBox {
+      max-width: 1000px;
+      @media screen and (max-width: 1000px) {
+        max-width: 100%;
+    }
+    @media screen and (max-width: 600px) {
+        max-width: 100%;
+    }
+    #mobileWorkFlow{
+        @media screen and (max-width: 600px) {
+            display: flex;
+        justify-content: center;
+        }
+
+        #mobileWorkFlowLine {
+            @media screen and (max-width: 600px) {
+                height: 1020px;
+                width: 1px;
+                background: #000000;
+                margin-left: 30px;
+            }
+          }
+          #mobileWorkFlowCircleBox{
+            .mobileWorkFlowCircle{
+                @media screen and (max-width: 600px) {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    background: #112152;
+                    margin-bottom: 140px;
+                    transform: translate(-30px, 30px);
+                }
+            }
+          }
+          #mobileWorkFlowBox{
+            @media screen and (max-width: 600px) {
+                max-width: 100%;
+                display: block;
+                margin-top: 40px;
+            }
+            // dt{
+            //     @media screen and (max-width: 600px) {
+            //         max-width: 300px;
+            //         height: 60px;
+            //         margin-bottom: 140px;
+            //         border-top: 1px solid #333;
+            //         transform: translateX(-15px);
+            //         padding-left: 15px;
+            //         padding-top: 16px;
+            //     }
+            // }
+            dd{
+                @media screen and (max-width: 600px) {
+                    line-height: 24px;
+                }
+            }
+          }
+    }
+      #workFlowBoxTop {
+        margin-left: 16px;
+        margin-top: 72px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 124px;
+        dl {
+          max-width: 240px;
+          max-height: 242px;
+          border-left: 1px solid #333;
+          padding: 24px 16px 16px 16px;
+          text-align: justify;
+          line-height: 24px;
+
+          dt {
+            margin-bottom: 16px;
+
+          }
+        }
+      }
+      #workFlowLine {
+        margin-top: 48px;
+        border-bottom: 1px solid #333;
+        max-width: 1000px;
+      }
+
+      #workFlowCircleBox {
+        display: flex;
+        max-width: 1000px;
+        .workFlowCircle {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          background: #112152;
+          transform: translateY(-40px);
+          margin-right: 102px;
+
+          &:first-child {
+            margin-left: 16px;
+          }
+        }
+      }
+      #workFlowBoxBottom {
+        margin-left: 200px;
+        margin-top: 72px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        transform: translateY(-98px);
+        column-gap: 1px;
+        dl {
+          max-width: 240px;
+          max-height: 242px;
+          border-left: 1px solid #333;
+          padding: 48px 16px 16px 16px;
+          text-align: justify;
+          line-height: 24px;
+          dt {
+            margin-bottom: 16px;
+          }
+          &:last-child {
+            margin-left: -35px;
+          }
+        }
+      }
+    }
+    #workFlowComent {
+      text-align: center;
+      transform: translateY(-72px);
+      color: #333;
+      margin-top: 32px;
+      @media screen and (max-width: 1000px) {
+        max-width: 600px;
+        margin-top: 120px;
+        text-align: center;
+        margin: 120px auto 0;
+    }
+    @media screen and (max-width: 600px) {
+        max-width: 600px;
+        margin-top: 120px;
+        text-align: center;
+    }
+      #mobile_space {
+        display: none;
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+        @media screen and (max-width: 600px) {
+            display: block;
+        }
+      }
+    }
+    #arrowBox5 {
+      width: 200px;
+      height: 30px;
+      color: #112152;
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 112px;
+      @media screen and (max-width: 1000px) {
+        max-width: 100%;
+    }
+    @media screen and (max-width: 600px) {
+        max-width: 100%;
+        padding-bottom: 80px;
+    }
+      a {
+        font-size: 24px;
+        @media screen and (max-width: 1000px) {
+            font-size: 24px;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 16px;
+        }
+      }
+    }
+  }
+
+  #arrow5{
+    @media screen and (max-width: 1000px) {
+        width: 130px;
+        margin-left: 42px;
+    }
+    @media screen and (max-width: 600px) {
+        width: 80px;
+        margin-left: 62px;
+    }
+  }

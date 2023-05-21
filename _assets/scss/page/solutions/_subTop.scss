@@ -1,0 +1,46 @@
+@use '../../setting/setting' as f;
+
+
+.subTopBox {
+    width: 100%;
+    position: relative;
+
+    #solutionsTop-image {
+      opacity: 0.8;
+      img {
+        height: 840px;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+      }
+    }
+    #worksTop-image {
+        opacity: 0.8;
+        img {
+          height: 840px;
+          width: 100%;
+          object-fit: cover;
+          position: relative;
+        }
+      }
+    .subtop {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      margin: auto;
+      font-size: 48px;
+      p {
+        font-size: 16px;
+        text-align: center;
+        color: #112152;
+        margin-top: 16px;
+      }
+      .indexBorder {
+        // width: 56px;
+        // height: 3px;
+        // background-color: #e1b85d;
+        margin: 16px auto 72px;
+      }
+    }
+  }

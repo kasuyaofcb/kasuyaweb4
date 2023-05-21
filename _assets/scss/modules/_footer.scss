@@ -1,0 +1,9 @@
+@use '../setting/setting' as f;
+
+footer {
+    height: 48px;
+    .copyright {
+      text-align: center;
+      line-height: 48px;
+    }
+  }

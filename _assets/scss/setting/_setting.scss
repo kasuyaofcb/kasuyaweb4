@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+// メディアクエリの基準幅
+$bp-sp: 768px;
+$bp-pc: 769px;
+
+// color
+$main: #4892ff;
+$accent: #FFBA53;
+$main-brue: #2BD1E6;
+$main-brue--opacity3: rgba(43,209,230,0.3);
+$white: #fff;
+$light-white: #FFFAFA;
+$sub-brue: #2BD1E6;
+$text: #383838;
+$sub-yellow: #FFE082;
+$sub-yellow--opacity3: rgba(255,224,130,0.3);
+$black: #000000;
+
+/* フォント============================== */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lusitana:wght@400;700&family=Noto+Sans+JP&family=Pacifico&family=Playfair+Display:wght@400;500&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+$main:'Raleway', sans-serif;
+// $basic:'Roboto','YuMincho','Yu Mincho','Yu Mincho Light','游明朝体','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+// $english:'Roboto Mono', monospace,;
+// $h2:'Lusitana', serif;
+// $name:'Pacifico', cursive;
+
+/* フォントサイズ============================== */
+html {
+	font-size: 62.5%;
+	/*   @media screen and (max-width:$tab){
+    font-size: 50%;
+  } */
+}

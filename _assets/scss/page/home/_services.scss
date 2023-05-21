@@ -1,0 +1,139 @@
+@use "../../setting/setting" as f;
+
+.services{
+	height: 100vh;
+}
+
+.services__contents{
+	margin-top: 32px;
+	padding: 0 32px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 40px;
+}
+
+.services__contentsBox{
+	width: 50%;
+	// height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	row-gap: 120px;
+}
+
+.services__inner{
+display: flex;
+flex-direction: column;
+justify-content: center;
+max-width: 1450px;
+margin: 0 auto;
+}
+
+.services__borderTop{
+	border-top: 1px solid f.$light-white;
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.services__borderTop::after{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1px;
+	height: 70vh;
+	background: f.$white;
+}
+
+
+.services__borderTop{
+	margin-top: 5%;
+	border-top: 1px solid #fff;
+	width: 90%;
+}
+
+.services__leftBox{
+	width: 50%;
+}
+
+
+
+.services__tabs{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	li{
+		max-width: 150px;
+	}
+	img{
+	width: 100%;
+	}
+}
+
+.services__contentsItem{
+	max-width: 900px;
+	min-height: 500px;
+	// display: none;
+p{
+	color: #fff;
+	font-size: 24px;
+}
+svg{
+	max-width: 200px;
+	max-height: 200px;
+}
+}
+
+.services__contentsItem p{
+	transform: translate(0, 105%);
+}
+
+.services__clickActive{
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+
+}
+
+.services__contentText{
+	overflow: hidden;
+}
+
+.services__clickActive p{
+    transform: translate(0, 0);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+	opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.services__clickActiveSpin{
+	animation: spin 5s linear infinite;
+}
+
+.services__textBox{
+	color: #fff;
+	max-width: 400px;
+}
+
+.services__subTitle{
+	color: #fff;
+}
+
+.services__contentsItem:hover img {
+	animation: spin 5s linear infinite;
+}
+.services__contentsItem:hover p {
+width: 100%;
+opacity: 1;
+transition: 0.5;
+white-space: normal;
+}
+
+@keyframes spin{
+	0%   { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }

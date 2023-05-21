@@ -1,0 +1,16 @@
+/* -----------------------------------------------
+* Page エントリーポイント
+-------------------------------------------------- */
+@use './home/fv2';
+@use './home/works';
+@use './home/works2';
+@use './home/skills';
+@use './home/about';
+@use './home/backgroundChange';
+@use './home/services';
+@use './home/solutions';
+@use './home/test';
+@use './home/toContact';
+
+
+@use './works/pageWorks';
