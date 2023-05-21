@@ -2,6 +2,7 @@
 * Page エントリーポイント
 -------------------------------------------------- */
 @use './home/fv2';
+@use './home/fv';
 @use './home/works';
 @use './home/works2';
 @use './home/skills';
@@ -10,7 +11,8 @@
 @use './home/services';
 @use './home/solutions';
 @use './home/test';
-@use './home/toContact';
+@use './common/gsap';
+
 
 
 @use './works/pageWorks';

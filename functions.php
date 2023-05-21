@@ -5,15 +5,9 @@
 function my_enqueue_styles()
 {
     wp_enqueue_style('main-css', get_template_directory_uri() . '/_static/dist/css/style.css', array(), '', 'all');
-    wp_enqueue_style('swiper', 'https://unpkg.com/swiper@7/swiper-bundle.min.css');
 
 }
 add_action('wp_enqueue_scripts', 'my_enqueue_styles');
-
-
-
-
-
 
 
 if (!is_admin()) {
@@ -27,70 +21,7 @@ if (!is_admin()) {
             true,
             date("His")
         );
-        wp_register_script(
-            'swiper',
-            'https://unpkg.com/swiper@7/swiper-bundle.min.js',
-            array('jquery'),
-            '',
-            true,
-            date("His")
-        );
-        wp_register_script(
-            'swiper-act',
-            get_bloginfo('template_directory') . '/_static/dist/js/swiper.js',
-            array('jquery'),
-            '',
-            true,
-            date("His")
-        );
-        wp_register_script(
-            'gsap-cdn',
-            'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js',
-            array('jquery'),
-            '',
-            true,
-            date("His")
-        );
-        wp_register_script(
-            'gsap-scrollTrigger-cdn',
-            'https://cdn.jsdelivr.net/npm/gsap@3.7.0/dist/ScrollTrigger.min.js',
-            array('jquery'),
-            '',
-            true,
-            date("His")
-        );
-        wp_register_script(
-            'gsap',
-            get_bloginfo('template_directory') . '/_static/dist/js/gsap.js',
-            array('script01'),
-            '',
-            true,
-            date("His")
-        );
-        wp_register_script(
-            'locomotive-scroll',
-            get_bloginfo('template_directory') . '/_static/dist/js/locomotive-scroll.min.js',
-            array('jquery'),
-            '',
-            true,
-            date("His")
-        );
-        wp_register_script(
-            'midnight',
-            get_bloginfo('template_directory') . '/_static/dist/js/midnight.min.js',
-            array('jquery'),
-            '',
-            true,
-            date("His")
-        );
-        // wp_register_script(
-        //     'parallax',
-        //     get_bloginfo('template_directory') . '/_static/dist/js/parallax.min.js',
-        //     array('jquery'),
-        //     '',
-        //     true,
-        //     date("His")
-        // );
+
     }
     function add_script()
     {
@@ -99,11 +30,9 @@ if (!is_admin()) {
         // TOPページ専用
         if (is_front_page()) {
             wp_enqueue_script('script01');
-            wp_enqueue_script('gsap-cdn');
-            wp_enqueue_script('gsap-scrollTrigger-cdn');
-            wp_enqueue_script('gsap');
-            wp_enqueue_script('locomotive-scroll');
-            // wp_enqueue_script('parallax');
+            // wp_enqueue_script('gsap');
+
+
         }
         // 固定ページIDが“11”のページ専用
         // elseif (is_page(array(11))) {
@@ -127,3 +56,14 @@ if (!is_admin()) {
     }
     add_action('wp_print_scripts', 'add_script');
 }
+
+// gsap読み込み
+function add_gsap() {
+    	//デフォルトjquery削除
+		// wp_deregister_script('jquery');
+
+    wp_enqueue_script( 'gsap-cdn', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js', array(), '', true );
+    wp_enqueue_script( 'gsap-scroll-trigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js', array(), '', true );
+    wp_enqueue_script( 'gsap', get_template_directory_uri() . '/_static/dist/js/gsap.js', array('gsap-cdn'), '', true );
+    // wp_register_script('gsap',get_bloginfo('template_directory') . '/_static/dist/js/gsap.js',array('gsap-cdn'), '', true, date("His"));
+} add_action( 'wp_enqueue_scripts', 'add_gsap' );

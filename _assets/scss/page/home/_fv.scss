@@ -84,3 +84,21 @@ grid-template-areas:
 .fv__bottomLine{
   background: linear-gradient(90deg, #333 0%,#333 50%,#fff 50%,#fff 100%);
 }
+
+
+body{
+	background:#ccc;
+}
+#magazine{
+	width:1152px;
+	height:752px;
+}
+#magazine .turn-page{
+	background-color:#ccc;
+	background-size:100% 100%;
+}
+
+
+.fv__icon{
+  width: 300px;
+}

@@ -46,8 +46,8 @@
 </section>
 
 
-
+<!--
 <script>
     var demo = document.getElementById("demo");
     var parallax = new Parallax(demo);
-</script>
+</script> -->
