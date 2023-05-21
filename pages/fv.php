@@ -1,10 +1,11 @@
-<section class="fv scroll-child swiper-slide">
-    <div class="fv__inner innerWrapper no_stick_">
-        <div class="fv__leftBox no_stick_">
+<section class="fv">
+    <div class="fv__inner innerWrapper">
 
-            <div class="fv__textBox no_stick_">
-                <h1>TADAOMI<br>KASUYA</h1>
-                <div class="fv__textSub no_stick_">
+    <div class="line1"></div>
+            <div class="fv__textBox">
+
+                <h1>TADAOMI <span>KASUYA</span></h1>
+                <div class="fv__textSub">
                     <p>Web Director</p>
                     <p>Web Designer</p>
                     <p>Markup Enginner</p>
@@ -25,14 +26,6 @@
 
             </div>
 
-        </div>
-        <div class="fv__rightBox no_stick_">
-            <!-- <div class="fv__border fv__border1"></div>
-<div class="fv__border fv__border2"></div>
-<div class="fv__border fv__border3"></div> -->
-
-        </div>
-        <div class="fv__bottomLine bottomLine no_stick_">01</div>
     </div>
-
+    <!-- <div class="fv__bottomLine bottomLine no_stick_">01</div> -->
 </section>

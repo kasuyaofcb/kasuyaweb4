@@ -1,32 +1,54 @@
 @use '../../setting/setting' as f;
 
 .fv{
-position: relative;
-height: 100vh;
+// position: relative;
+// width: 80vw;
+// height: 80vw;
+// margin: 0 auto;
+
 }
 
 .fv__inner {
+  position: relative;
   display: flex;
-  height: 100vh;
+justify-content: center;
+align-items: center;
+height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  border: 1px solid f.$text ;
+  h1{
+    span{
+      color: f.$main-color;
+    }
+  }
 }
 
-.fv__leftBox{
-  width: 50%;
-display: grid;
-align-items: center;
-    justify-content: center;
-    position: relative;
+.line1{
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  height: 80vh;
+  width: 1px;
+  background-color: f.$text;
 }
+
 .fv__textBox{
+
+  grid-column: 2 / 12;
+  grid-row: 3 / 4;
   padding: 40px;
   h1{
-    font-size: 9.6rem;
+    font-size: 6.4rem;
       }
+
+
 
 }
 .fv__textSub{
   p{
-    font-size: 3.6rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -37,17 +59,7 @@ align-items: center;
   max-width: 60px;
 }
 
-.fv__rightBox{
-  width: 50%;
-  background-image: url("../img/top-bg4.png");
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-areas:
-"a b c d"
-"e f g h"
-"i j k l"
-"m n o p";
-}
+
 
 .fv__languagesBox{
   position: absolute;
@@ -55,49 +67,8 @@ grid-template-areas:
   right: 10%;
 
 
-  p{
-    // transform: rotate(90deg);
-    color: #000;
-    // text-shadow: 1px 1px 2px #333;
-    // color:  #ffba53;
-
-  }
 
 }
-
-.fv__border{
-  width: 200px;
-  height: 6px;
-  background: #ffba53;
-}
-
-.fv__border1{
-  grid-area:g;
-}
-.fv__border2{
-  grid-area: i;
-}
-.fv__border3{
-  grid-area: o;
-}
-
-.fv__bottomLine{
-  background: linear-gradient(90deg, #333 0%,#333 50%,#fff 50%,#fff 100%);
-}
-
-
-body{
-	background:#ccc;
-}
-#magazine{
-	width:1152px;
-	height:752px;
-}
-#magazine .turn-page{
-	background-color:#ccc;
-	background-size:100% 100%;
-}
-
 
 .fv__icon{
   width: 300px;

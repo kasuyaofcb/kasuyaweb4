@@ -9,4 +9,24 @@
 
 .panel {
   will-change: transform;
+  width: calc(600% / 6);
+}
+
+
+
+// .blue{
+// 	background-color: blue;
+// 	// transform: translateZ(-1000px);
+// }
+.red{
+	background-color: red;
+}
+.gray{
+	background-color: gray;
+}
+.purple{
+	background-color: purple;
+}
+.green{
+	background-color: green;
 }
